@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+
+}
+
+header {
+    margin-top: 25px;
+    text-align: center;
+    display: none;
+}
+
+.container{
+    width: 326px;
+    margin: auto;
+}
+
+main h2{
+    color: #CA3884;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; 
+    margin-top: 34px;
+    margin-bottom: 16px;
+    text-align: start;
+}
+
+main h1{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    margin-bottom: 44px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 326px;
+    margin: auto;
+    gap: 16px;
+}
+
+form input{
+    padding: 0px 18px;
+    border-radius: 12px;
+    height: 44px;
+    border: 2px solid var(--border-primary, #D1D5DB);
+    background: var(--background-secondary, #FFF);
+
+    color: var(--content-tertiary, #9CA3AF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+
+}
+
+form button{
+    padding: 10px 24px;
+    background: #CA3884;
+    border-radius: 12px;
+
+    color: var(--content-always-white, #FFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 125% */
+
+    margin-bottom: 40px;
+}
+
+main .compras .item {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+main .compras .item label{
+    color: #374151;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; 
+    cursor: pointer;
+    display: flex;
+    padding: 12px;
+    gap: 12px;
+
+    border-radius: 12px;
+}
+
+main .compras .item button{
+    background: none; /* Remove o fundo do botão */
+    border: none; /* Remove a borda do botão */
+    padding: 0; /* Remove o preenchimento interno do botão */
+    margin: 0; /* Remove a margem, se necessário */
+    cursor: pointer; /* Altera o cursor para indicar que é clicável */
+    font: inherit; /* Usa a fonte do elemento pai, se necessário */
+    outline: none; /* Remove o contorno de foco padrão do botão */
+    display: inline; /* Alinha o botão como um elemento em linha (opcional) */
+}
+
+@media (min-width: 1123px){
+    header{
+        display: block;
+    }
+
+    .container{
+        width: 627px;
+    }
+
+
+    form {
+        flex-direction: row;
+        width: 100%;
+        gap: 16px;
+    }
+
+    main form input{
+        width: 451px;
+    }
+
+    form button{
+        width: 160px;
+        font-size: 15px;
+    }
+}
