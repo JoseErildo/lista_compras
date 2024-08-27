@@ -48,10 +48,9 @@ form input{
     padding: 0px 18px;
     border-radius: 12px;
     height: 44px;
-    border: 2px solid var(--border-primary, #D1D5DB);
-    background: var(--background-secondary, #FFF);
+    border: 2px solid  #D1D5DB;
 
-    color: var(--content-tertiary, #9CA3AF);
+    color: #9CA3AF;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -102,6 +101,30 @@ main .compras .item button{
     font: inherit; /* Usa a fonte do elemento pai, se necessário */
     outline: none; /* Remove o contorno de foco padrão do botão */
     display: inline; /* Alinha o botão como um elemento em linha (opcional) */
+}
+
+main .compras{
+    margin-bottom: 36px;
+}
+
+main .item_removido{
+    color: white;
+    display: flex;
+    max-width: 627px;
+    padding: 12px;
+    align-items: center;
+    
+
+    border-radius: 12px;
+    background:#C93847;
+}
+
+main .item_removido p{
+    margin-left: 8px;
+}
+
+.img_x{
+    margin-left: auto;
 }
 
 @media (min-width: 1123px){

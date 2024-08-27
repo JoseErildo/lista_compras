@@ -19,19 +19,19 @@
 
             <h1>Compras da Semana</h1>
 
-            <form action="">
-                <input type="text" value="Adicione um novo item">
+            <form id="add_item" action="">
+                <input id="item"type="text" value="Adicione um novo item">
                 <button type="submit">Adicionar item</button>
             </form>
 
-            <div class="compras">
+            <div id="compras" class="compras">
                 <div class="item">
                     <label for="">
-                        <input type="radio" value="Pão de forma">
+                        <input type="radio" name="item" value="Pão de forma">
                         Pão de forma
                     </label>
 
-                    <button>
+                    <button id="botao_lixeira">
                         <img src="./img/lixeira.svg" alt="lixeira">
                     </button>
                 
@@ -39,7 +39,7 @@
 
                 <div class="item">
                     <label for="">
-                        <input type="radio" value="Pão de forma">
+                        <input type="radio" name="item" value="Pão de forma">
                         Café preto
                     </label>
 
@@ -51,7 +51,7 @@
 
                 <div class="item">
                     <label for="">
-                        <input type="radio" value="Pão de forma">
+                        <input type="radio" name="item" value="Pão de forma">
                         Suco de Laranja
                     </label>
 
@@ -63,7 +63,7 @@
 
                 <div class="item">
                     <label for="">
-                        <input type="radio" value="Pão de forma">
+                        <input type="radio" name="item" value="Pão de forma">
                         Bolacha
                     </label>
 
@@ -73,8 +73,21 @@
                 
                 </div>
             </div>
+
+            <div class="item_removido">
+
+                
+                <img src="./img/warning.svg" alt="aviso logo">
+
+                <p>O item foi removido da lista</p>
+
+                <img class="img_x" src="./img/x.svg" alt="">
+
+            </div>
         </div>
         
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>
