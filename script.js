@@ -1,23 +1,24 @@
-form_add_item = document.getElementById("add_item")
-compras = document.getElementById("compras")
-
-
+const form_add_item = document.getElementById("add_item")
+const compras = document.getElementById("compras")
+const item = document.getElementById('item')
 
 form_add_item.addEventListener("submit", () =>{
     event.preventDefault()
 
+    let msg_item_removido = document.getElementById('msg_item_removido')
+    msg_item_removido.classList.remove('item_removido_mostrar_msg')
 
     //Criando itens
-    div_item = document.createElement('div')
+    let div_item = document.createElement('div')
     div_item.classList.add('item')
 
-    label = document.createElement('label')
-    button_lixeira = document.createElement('button')
-    lixeira = document.createElement('img')
+    let label = document.createElement('label')
+    let button_lixeira = document.createElement('button')
+    let lixeira = document.createElement('img')
     lixeira.src = './img/lixeira.svg'
-    input_radio = document.createElement('input')
+    let input_radio = document.createElement('input')
     input_radio.type = 'radio'
-    textNode = document.createTextNode(item.value)
+    let textNode = document.createTextNode(item.value)
     
     //criando arvore
     div_item.append(label,button_lixeira)
@@ -29,9 +30,17 @@ form_add_item.addEventListener("submit", () =>{
     button_lixeira.addEventListener("click", () => {
         divPai = button_lixeira.parentElement
         divPai.remove()
+        let msg_item_removido = document.getElementById('msg_item_removido')
+        msg_item_removido.classList.add('item_removido_mostrar_msg')
     })
 
+    console.log(compras.querySelectorAll('div').length)
+
+
 })
+
+
+
 
 
 

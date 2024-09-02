@@ -72,6 +72,11 @@ form button{
     margin-bottom: 40px;
 }
 
+main .compras{
+    overflow-y: scroll;
+    height: 232px;
+}
+
 main .compras .item {
     display: flex;
     justify-content: space-between;
@@ -126,6 +131,15 @@ main .item_removido p{
 .img_x{
     margin-left: auto;
 }
+
+main .item_removido_ocultar_msg{
+    display: none;
+}
+
+main .item_removido_mostrar_msg{
+    display: flex;
+}
+
 
 @media (min-width: 1123px){
     header{
